@@ -9,6 +9,6 @@ namespace StarChart.Data
         {
         }
 
-        public DbSet<CelestialObjects> CelestialObjects { get; set; }
+        public DbSet<CelestialObject> CelestialObjects { get; set; }
     }
 }

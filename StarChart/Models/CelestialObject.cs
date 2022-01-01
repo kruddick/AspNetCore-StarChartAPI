@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StarChart.Models
 {
-    public class CelestialObjects
+    public class CelestialObject
     {
         public uint Id { get; set; }
         
@@ -15,7 +15,7 @@ namespace StarChart.Models
         public int? OrbitedObjectId { get; set; }
 
         [NotMapped]
-        public List<CelestialObjects> Satelites { get; set; }
+        public List<CelestialObject> Satelites { get; set; }
 
         public TimeSpan OrbitalPeriod { get; set; }
 
